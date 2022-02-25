@@ -7,5 +7,5 @@ body {
 }
 
 a {
-  @apply text-red-400 hover:underline;
+  @apply transition text-red-400 hover:underline;
 }
