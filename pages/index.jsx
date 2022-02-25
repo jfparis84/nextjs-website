@@ -41,7 +41,7 @@ export default function Index() {
         </div>
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col border-b border-gray-200">
         {bulletPoints.map((item, key) => (
           <div
             className={classNames(
@@ -51,7 +51,7 @@ export default function Index() {
             key={key}
           >
             <div className="lg:w-1/3 mx-10">
-              <h2 className="text-2xl text-red-500">{item.title}</h2>
+              <h2 className="text-2xl text-red-500 mb-3">{item.title}</h2>
               <p className="text-gray-500">{item.content}</p>
             </div>
             <div className="lg:w-1/3 mx-10 mb-5">

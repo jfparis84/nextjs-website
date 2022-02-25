@@ -1,0 +1,51 @@
+import { CalendarIcon } from "@heroicons/react/outline";
+import Layout from "../../components/Layout/Default";
+
+const blogPosts = [
+  {
+    title: "title blog",
+    content: "jai mon super content icit",
+    image: "",
+  },
+  {
+    title: "title blog",
+    content: "jai mon super content icit",
+    image: "",
+  },
+  {
+    title: "title blog",
+    content: "jai mon super content icit",
+    image: "",
+  },
+  {
+    title: "title blog",
+    content: "jai mon super content icit",
+    image: "",
+  },
+];
+
+const Index = () => {
+  return (
+    <Layout>
+      <div className="flex flex-row flex-wrap">
+        {blogPosts.map((item, key) => (
+          <div className="mx-3 w-full lg:w-1/4 border border-gray-200 mb-5" key={key}>
+            <div className="px-2 py-2">
+              <p className="text-xs text-gray-400 mb-2"><CalendarIcon className="inline-flex h-3.5 w-3.5 -top-0.5 relative" /> 23 fev 2022</p>
+              <a href="#" className="group block hover:text-red-400 transition">
+                <h2 className="text-2xl text-gray-700 group-hover:text-red-400 mb-3">
+                  {item.title}
+                </h2>
+                <p className="text-gray-500 group-hover:text-red-400">
+                  {item.content}
+                </p>
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </Layout>
+  );
+};
+
+export default Index;

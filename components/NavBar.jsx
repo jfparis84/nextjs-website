@@ -1,11 +1,13 @@
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import classNames from "classnames";
+import Link from "next/link";
 import { useRouter } from "next/router";
 
 const navigation = [
   { name: "Accueil", href: "/" },
   { name: "À propos", href: "/a-propos" },
+  { name: "Développement", href: "/developpement" },
 ];
 
 export default function NavBar() {
@@ -24,19 +26,19 @@ export default function NavBar() {
                 <div className="hidden md:block">
                   <div className="ml-10 flex items-baseline space-x-4">
                     {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          router.asPath === item.href
-                            ? "text-red-500"
-                            : "text-white  hover:text-red-500",
-                          "px-2 py-2 rounded-md text-sm font-medium transition"
-                        )}
-                        aria-current={item.current ? "page" : undefined}
-                      >
-                        {item.name}
-                      </a>
+                      <Link href={item.href} key={item.name}>
+                        <a
+                          className={classNames(
+                            router.asPath === item.href
+                              ? "text-red-400 hover:no-underline"
+                              : "text-white  hover:text-red-400 hover:no-underline",
+                            "px-2 py-2 rounded-md text-sm font-medium transition"
+                          )}
+                          aria-current={item.current ? "page" : undefined}
+                        >
+                          {item.name}
+                        </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -56,7 +58,7 @@ export default function NavBar() {
           </div>
 
           <Disclosure.Panel className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t-2 border-red-500">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}

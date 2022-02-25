@@ -13,8 +13,8 @@ export default function Layout({ title, children }) {
         <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
           <div className="text-white text-sm">
             ©2022 par JF Paris. Créer avec{" "}
-            <a href="https://nextjs.org/">Nextjs</a> /{" "}
-            <a href="https://tailwindcss.com/">TailwindCSS</a>
+            <a href="https://nextjs.org/" className="text-red-400 transition hover:underline">Nextjs</a> /{" "}
+            <a href="https://tailwindcss.com/" className="text-red-400 transition hover:underline">TailwindCSS</a>
           </div>
         </div>
       </footer>
