@@ -9,3 +9,11 @@ body {
 a {
   @apply transition text-red-400 hover:underline;
 }
+
+.post-container {
+  .post-content {
+    h2 {
+      @apply text-gray-500 font-bold text-2xl my-5;
+    }  
+  }
+}
