@@ -28,7 +28,7 @@ const blogPosts = [
 const Index = () => {
   return (
     <Layout>
-      <div className="max-w-7xl mx-3 mb-5 pb-3 border-b-2 border-gray-200">
+      <div className="max-w-7xl my-10 pb-3 border-b-2 border-gray-200">
         <h1 className="text-3xl font-bold text-gray-900">Développement</h1>
       </div>
       <div className="flex flex-row flex-wrap">
@@ -37,7 +37,7 @@ const Index = () => {
             className={classNames("w-full mb-5", key !== 0 ? "lg:w-1/3" : "")}
             key={key}
           >
-            <div className="mx-3 border border-gray-200 px-2 py-2">
+            <div className="border border-gray-200 p-2 mr-2">
               <p className="text-xs text-gray-400 mb-2">
                 <CalendarIcon className="inline-flex h-3.5 w-3.5 -top-0.5 relative" />{" "}
                 23 fev 2022
