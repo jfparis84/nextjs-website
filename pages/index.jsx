@@ -4,16 +4,22 @@ import Layout from "../components/Layout/Default";
 
 const bulletPoints = [
   {
-    title: "title 1",
+    title: "Développement",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate id est eget efficitur. Pellentesque nec blandit est. Nam mauris nisi, pharetra quis tincidunt blandit, ullamcorper non urna. Vivamus faucibus est massa, et porttitor nibh elementum in. Curabitur finibus massa tristique nulla maximus, vel ornare enim pulvinar.",
+      "Dans le développement web depuis plusieurs années, je me rappel des premiers sites que j'ai conçu lorsque je débutais mon secondaire, avant les années 2000 🤪 ",
     image: "/assets/img/james-harrison-vpOeXr5wmR4-unsplash.jpg",
   },
   {
-    title: "title 2",
+    title: "Mentorat, Coaching",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate id est eget efficitur. Pellentesque nec blandit est. Nam mauris nisi, pharetra quis tincidunt blandit, ullamcorper non urna. Vivamus faucibus est massa, et porttitor nibh elementum in. Curabitur finibus massa tristique nulla maximus, vel ornare enim pulvinar.",
-    image: "/assets/img/yancy-min-842ofHC6MaI-unsplash.jpg",
+      "Depuis quelques années, je me suis découvert une passion pour le coaching et le mentorat auprès des jeunes. Cette passion m'aide dans ma vie professionnel à avoir un impact positive au sein de mon awesome team.",
+    image: "/assets/img/john-schnobrich-FlPc9_VocJ4-unsplash.jpg",
+  },
+  {
+    title: "Famille",
+    content:
+      "Papa, amant.",
+    image: "/assets/img/fe-ngo-bvx3G7RkOts-unsplash.jpg",
   },
 ];
 
@@ -35,7 +41,7 @@ export default function Index() {
             </span>
           </h1>
           <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl">
-            Avec plus de 15 ans d'expériences, je me passionne toujours dans les
+            Avec plus de 15 ans d'expériences, je me passionne toujours pour les
             technologies de développement web.
           </p>
         </div>
