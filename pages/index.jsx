@@ -1,5 +1,8 @@
 import classNames from "classnames";
 import Layout from "../components/Layout/Default";
+import TypingEffect from "../components/TypingEffect";
+
+const words = ["Développeur Full-Stack", "Leader", "Coaching", "Mentorat"];
 
 const bulletPoints = [
   {
@@ -16,8 +19,7 @@ const bulletPoints = [
   },
   {
     title: "Famille",
-    content:
-      "Papa, amant.",
+    content: "Papa, amant.",
     image: "/assets/img/fe-ngo-bvx3G7RkOts-unsplash.jpg",
   },
 ];
@@ -30,7 +32,8 @@ export default function Index() {
           <h1 className="text-4xl tracking-tight font-extrabold text-gray-800 sm:text-5xl md:text-6xl">
             <span className="block xl:inline">Jean-François Paris</span> <br />
             <span className="block text-red-500 xl:inline">
-              Développeur Full-Stack
+              <TypingEffect words={words} />
+              &nbsp;
             </span>
           </h1>
           <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl">
