@@ -15,9 +15,9 @@ const BlogPost = (props) => {
 
       <div className="post-container max-w-4xl mx-auto">
         <div className="mb-5">
-          <h2 className="text-2xl font-bold text-gray-500 mb-3">
+          <h1 className="text-3xl font-bold text-gray-500 mb-3">
             {attributes.title}
-          </h2>
+          </h1>
           <div className="mb-3">
             {attributes.categories.map((item, key) => (
               <span
@@ -36,12 +36,6 @@ const BlogPost = (props) => {
               day: "numeric",
             })}
           </div>
-        </div>
-        <div className="mb-10">
-          <img
-            src={attributes.image}
-            className=" rounded-md shadow-md shadow-gray-500"
-          />
         </div>
         <div
           className="post-content"
