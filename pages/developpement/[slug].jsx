@@ -37,7 +37,7 @@ const BlogPost = (props) => {
             })}
           </div>
         </div>
-        <div className="mb-5">
+        <div className="mb-10">
           <img
             src={attributes.image}
             className=" rounded-md shadow-md shadow-gray-500"

@@ -12,6 +12,7 @@ a {
 
 .post-container {
   .post-content {
+    @apply mb-10;
     h2 {
       @apply text-gray-500 font-bold text-2xl my-5;
     }  
