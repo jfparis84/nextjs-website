@@ -22,11 +22,19 @@ a {
       @apply text-gray-800 font-bold text-xl my-5;
     }  
 
+    h3 {
+      @apply text-gray-800 font-bold text-lg my-3;
+    }  
+
     img {
       @apply my-2 rounded-lg;
     }
 
     p {
+      @apply mb-5;
+    }
+
+    ul {
       @apply mb-5;
     }
 
