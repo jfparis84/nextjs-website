@@ -63,7 +63,7 @@ En entreprise, c'est difficile parfois de faire passer des idées alors que en f
 Pour moi, c'était l'endroit rêvé pour essayer des trucs. 
 De plus, le freelance m'a forcer à m'organiser autrement, il faut bien analyser les problèmes, proposer des solutions, monter des devis, suivi avec les clients, facturation, les comptes de dépenses. 
 Toute des aptitudes qui sortait de mon cadre.
-Merci à mes premiers clients qui m'ont fait confiance - Merci Josée 😀.
+Merci à mes premiers clients qui m'ont fait confiance - __Merci Josée et Bruno 😀__.
 
 ## Juillet 2021
 
@@ -122,6 +122,12 @@ __Merci Ayoub, Pat et Sandy pour votre coaching et votre patience.__
 
 ## Conclusion
 
+Que vous songez à l'idée de peut-être changer d'emploi ou non, restez à l'affut des demandes des recruteurs.
+Comme on dit, on ne sait jamais. Plus vous faites d'entrevues avec eux, plus vous allez voir le processus comme une discussion.
+De plus, si vous avez une bonne relation avec eux, ils seront en mesure de mieux filtrer les offres pour vous.
 
+De votre côté, mettez à jour votre profil __Linkedin__, utilisez une photo d'allure professionnel. Alimenter votre réseau en ajoutant de nouvelle relation, en publiant/repartagant des articles, en commentant sur vos contacts. 
 
+Mettez à jour votre CV, de cette façon, vous allez être prêt lorsque l'opportunité se présentera. Penser à créer un compte sur __indeed__ et entrer votre CV.
 
+Bonne chance les amis 😀
