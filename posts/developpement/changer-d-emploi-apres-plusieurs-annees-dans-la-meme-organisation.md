@@ -8,7 +8,7 @@ categories:
   - Carrière
 ---
 
-![the super caption!](/assets/img/victor-rodriguez-pWOdBS_l9LQ-unsplash.jpg "test de caption")
+![Un saut dans le vide!](/assets/img/victor-rodriguez-pWOdBS_l9LQ-unsplash.jpg "Un saut dans le vide")
 
 <div class="caption">
 Photo de <a href="https://unsplash.com/@vimarovi">Victor Rodriguez</a> sur <a href="https://unsplash.com">Unsplash</a>.
@@ -118,10 +118,10 @@ Les premières semaines, je commence à m'aclimater avec le processus de Sprint 
 Je prends mieux conscience et confiance sur le système en place.
 Je prends de plus de plus de tâches dans les Sprints.
 J'ai pris mon aire d'aller.
-__Merci Sandy et Pat pour votre coaching et votre patience.__
+__Merci Ayoub, Pat et Sandy pour votre coaching et votre patience.__
 
 ## Conclusion
 
-Praesent ullamcorper est in nibh volutpat ullamcorper. Vivamus in massa sed ipsum vulputate vestibulum a quis lacus. Aenean in suscipit felis, in mattis orci. Vivamus luctus eu risus eget molestie. Nullam ac dui dignissim, consectetur velit non, lacinia mauris. Aenean condimentum, tortor vel interdum porta, magna diam venenatis mauris, et faucibus nunc lorem quis sem. In ut facilisis lorem, non finibus odio. Sed convallis felis interdum viverra malesuada. Maecenas eu turpis a velit aliquam congue quis in dolor. Curabitur mattis orci vitae lacus consequat porta. Fusce posuere erat venenatis, consectetur ex ac, facilisis sapien. Aliquam molestie leo ut tortor suscipit, sit amet lacinia nulla feugiat. Integer at risus sodales, luctus nunc ac, pharetra augue. Sed dapibus metus justo, ac porttitor elit tristique vitae. Nunc porta condimentum nulla, et bibendum massa pretium eu.
+
 
 
