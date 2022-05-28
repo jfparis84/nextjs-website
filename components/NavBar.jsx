@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 const navigation = [
   { name: "Accueil", href: "/" },
   { name: "À propos", href: "/a-propos" },
-  { name: "Développement", href: "/developpement" },
+  { name: "Blogue", href: "/blogue" },
 ];
 
 export default function NavBar() {

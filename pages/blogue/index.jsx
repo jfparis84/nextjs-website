@@ -7,12 +7,12 @@ const importBlogPosts = async () => {
   // https://medium.com/@shawnstern/importing-multiple-markdown-files-into-a-react-component-with-webpack-7548559fce6f
   // second flag in require.context function is if subdirectories should be searched
   const markdownFiles = require
-    .context("../../posts/developpement", false, /\.md$/)
+    .context("../../posts", false, /\.md$/)
     .keys()
     .map((relativePath) => relativePath.substring(2));
   return Promise.all(
     markdownFiles.map(async (path) => {
-      const markdown = await import(`../../posts/developpement/${path}`);
+      const markdown = await import(`../../posts/${path}`);
       return { ...markdown, slug: path.substring(0, path.length - 3) };
     })
   );
@@ -22,7 +22,7 @@ const Index = ({ postsList }) => {
   return (
     <Layout>
       <div className="max-w-7xl my-10 pb-3 border-b-2 border-gray-200">
-        <h1 className="text-3xl font-bold text-gray-900">Développement</h1>
+        <h1 className="text-3xl font-bold text-gray-900">Blogue</h1>
       </div>
       <div className="flex flex-row flex-wrap">
         {postsList.map((item, key) => (
@@ -30,9 +30,8 @@ const Index = ({ postsList }) => {
             className={classNames("w-full mb-5 lg:w-1/3")}
             key={key}
           >
-            {console.log(item)}
             <div className="border border-gray-200 p-2 mr-2">
-              <Link href={"/developpement/" + item.slug}>
+              <Link href={"/blogue/" + item.slug}>
                 <a className="group block hover:text-red-400 transition">
                 <img src={item.attributes.image} />
                   <h1 className="text-3xl font-bold text-gray-500 mb-3 hover:text-red-400 ">

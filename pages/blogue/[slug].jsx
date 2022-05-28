@@ -10,7 +10,7 @@ const BlogPost = (props) => {
   return (
     <Layout>
       <div className="max-w-7xl my-10 pb-3 border-b-2 border-gray-200">
-        <h1 className="text-3xl font-bold text-gray-900">Développement</h1>
+        <h1 className="text-3xl font-bold text-gray-900">Blogue</h1>
       </div>
 
       <div className="post-container max-w-4xl mx-auto">
@@ -48,7 +48,7 @@ const BlogPost = (props) => {
 
 BlogPost.getInitialProps = async ({ query }) => {
   const { slug } = query;
-  const blogpost = await import(`../../posts/developpement/${slug}.md`).catch(
+  const blogpost = await import(`../../posts/${slug}.md`).catch(
     (error) => null
   );
 
