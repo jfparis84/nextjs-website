@@ -1,6 +1,6 @@
 ---
 title: Changer d'emploi après plusieurs années dans la même organisation.
-description: Un changement d'emploi est toujours un processus stressant et en même temps tellement intéressant.
+description: Changer d'emploi est toujours un processus stressant et en même temps tellement enrichissants. C'est le moment rêvé pour se remettre en question sur nos objectifs de carrière.
 keywords: Changer d'emploi après plusieurs années au même endroit.
 date: 2022-02-25
 image: /assets/img/victor-rodriguez-pWOdBS_l9LQ-unsplash.jpg

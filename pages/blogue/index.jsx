@@ -33,7 +33,6 @@ const Index = ({ postsList }) => {
             <div className="border border-gray-200 p-2 mr-2">
               <Link href={"/blogue/" + item.slug}>
                 <a className="group block hover:text-red-400 transition">
-                <img src={item.attributes.image} />
                   <h1 className="text-3xl font-bold text-gray-500 mb-3 hover:text-red-400 ">
                     {item.attributes.title}
                   </h1>
@@ -58,6 +57,7 @@ const Index = ({ postsList }) => {
                   day: "numeric",
                 })}
               </div>
+              <img src={item.attributes.image} className="mt-3" />
               <p className="mt-3">
                 {item.attributes.description}
               </p>

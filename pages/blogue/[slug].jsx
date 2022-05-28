@@ -1,3 +1,4 @@
+import { CalendarIcon } from "@heroicons/react/outline";
 import Layout from "../../components/Layout/Default";
 
 const BlogPost = (props) => {
@@ -29,6 +30,7 @@ const BlogPost = (props) => {
             ))}
           </div>
           <div className="text-sm">
+          <CalendarIcon className="inline-flex h-3.5 w-3.5 -top-0.5 relative" />{" "}
             {new Date(attributes.date).toLocaleDateString("fr-ca", {
               weekday: "long",
               year: "numeric",
