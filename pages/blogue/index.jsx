@@ -27,7 +27,7 @@ const Index = ({ postsList }) => {
       <div className="flex flex-row flex-wrap">
         {postsList.map((item, key) => (
           <div
-            className={classNames("w-full mb-5 lg:w-1/3")}
+            className={classNames("w-full mb-5 lg:w-1/3 md:w-1/2")}
             key={key}
           >
             <div className="border border-gray-200 p-2 mr-2">
