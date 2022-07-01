@@ -8,19 +8,31 @@ const bulletPoints = [
   {
     title: "Développement",
     content:
-      "Dans le développement web depuis plusieurs années, je me rappel des premiers sites que j'ai conçu lorsque je débutais mon secondaire, avant les années 2000 🤪 ",
+      "Dans le développement web depuis plusieurs années, je me rappel des premiers sites que j'ai conçu lorsque j'étais encore au secondaire, avant les années 2000 🤪 ",
     image: "/assets/img/james-harrison-vpOeXr5wmR4-unsplash.jpg",
+    caption:  {
+      name: "James Harrison",
+      href: "https://unsplash.com/@jstrippa",
+    },
   },
   {
     title: "Mentorat, Coaching",
     content:
       "Depuis quelques années, je me suis découvert une passion pour le coaching et le mentorat auprès des jeunes. Cette passion m'aide dans ma vie professionnel à avoir un impact positive au sein de mon awesome team.",
     image: "/assets/img/john-schnobrich-FlPc9_VocJ4-unsplash.jpg",
+    caption: {
+      name: "John Schnobrich",
+      href: "https://unsplash.com/@johnschno",
+    },
   },
   {
     title: "Famille",
-    content: "Papa, amant.",
+    content: "",
     image: "/assets/img/fe-ngo-bvx3G7RkOts-unsplash.jpg",
+    caption:  {
+      name: "Fé Ngô",
+      href: "https://unsplash.com/@fengo",
+    },
   },
 ];
 
@@ -61,6 +73,9 @@ export default function Index() {
                 src={item.image}
                 className="rounded shadow-md shadow-gray-500"
               ></img>
+              <div class="text-center mb-5 mt-3 text-gray-500 text-xs">
+                Photo de <a href={item.caption.href}>{item.caption.name}</a> sur <a href="https://unsplash.com">Unsplash</a>.
+              </div>
             </div>
           </div>
         ))}
