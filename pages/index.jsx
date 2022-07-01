@@ -40,7 +40,7 @@ export default function Index() {
             </span>
           </h1>
           <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl">
-            Avec plus de 15 ans d'expériences, je me passionne toujours pour les
+            Avec plus de 15 ans d&apos;expériences, je me passionne toujours pour les
             technologies de développement web.
           </p>
         </div>
@@ -63,8 +63,9 @@ export default function Index() {
               <img
                 src={item.image}
                 className="rounded shadow-md shadow-gray-500"
+                alt=""
               ></img>
-              <div class="text-center mb-5 mt-3 text-gray-500 text-xs">
+              <div className="text-center mb-5 mt-3 text-gray-500 text-xs">
                 Photo de <a href={item.caption.href}>{item.caption.name}</a> sur <a href="https://unsplash.com">Unsplash</a>.
               </div>
             </div>

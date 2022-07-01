@@ -61,7 +61,7 @@ const Index = ({ postsList }) => {
                   day: "numeric",
                 })}
               </div>
-              <img src={item.attributes.image} className="mt-3" />
+              <img src={item.attributes.image} className="mt-3" alt="" />
               <p className="mt-3">
                 {item.attributes.description}
               </p>

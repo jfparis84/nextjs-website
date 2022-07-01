@@ -17,19 +17,19 @@ const Index = () => {
           <p className="mb-3 text-justify">
             <strong>Développeur, Leader, Freelance</strong>
             <br />
-            Depuis plus de 15 ans dans le développement web, j'ai eu la chance
-            et la malchance 😜 de travailler / jouer avec plein d'outils et de
-            technologie. Les technologies ont tellement évoluées que l'on doit
-            rester à l'affut de tout ce qui ce fait dans ce secteur d'activité.
-            J'ai participé à plusieurs projets d'evergures au sein d'entreprise
-            ainsi qu'en freelance.
+            Depuis plus de 15 ans dans le développement web, j&apos;ai eu la chance
+            et la malchance 😜 de travailler / jouer avec plein d&apos;outils et de
+            technologie. Les technologies ont tellement évoluées que l&apos;on doit
+            rester à l&apos;affut de tout ce qui ce fait dans ce secteur d&apos;activité.
+            J&apos;ai participé à plusieurs projets d&apos;evergures au sein d&apos;entreprise
+            ainsi qu&apos;en freelance.
           </p>
 
           <p className="mb-3 text-justify">
             <strong>Mentorat</strong>
             <br />
             Depuis quelques années, je suis mentor sur la plateforme{" "}
-            <a href="https://academos.qc.ca" target="_blank">
+            <a href="https://academos.qc.ca" target="_blank" rel="noreferrer">
               <ExternalLinkIcon className="inline w-4 h-4 relative -top-0.5" />
               Academos
             </a>
@@ -41,7 +41,7 @@ const Index = () => {
             <strong>Papa</strong>
             <br />
             Père de 3 beaux enfants, amoureux hors pairs. À chaque jour qui
-            passe, je me bât pour être une meilleure personne. Pour moi, c'est
+            passe, je me bât pour être une meilleure personne. Pour moi, c&apos;est
             primordiale de priorisé ma famille avant tout.
           </p>
           <p className="mb-3">
@@ -52,7 +52,7 @@ const Index = () => {
           </p>
         </div>
         <div className="mb-5 md:w-1/2 md:pl-5">
-          <img src="/assets/img/avatar.jpeg" className=" rounded-full"></img>
+          <img src="/assets/img/avatar.jpeg" className="rounded-full" alt="Jean-François Paris"></img>
         </div>
       </div>
     </Layout>
