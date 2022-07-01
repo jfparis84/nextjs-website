@@ -24,16 +24,7 @@ const bulletPoints = [
       name: "John Schnobrich",
       href: "https://unsplash.com/@johnschno",
     },
-  },
-  {
-    title: "Famille",
-    content: "",
-    image: "/assets/img/fe-ngo-bvx3G7RkOts-unsplash.jpg",
-    caption:  {
-      name: "Fé Ngô",
-      href: "https://unsplash.com/@fengo",
-    },
-  },
+  }
 ];
 
 export default function Index() {
