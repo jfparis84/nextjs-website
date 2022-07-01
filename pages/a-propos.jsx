@@ -13,7 +13,7 @@ const Index = () => {
           <p className="mb-3 text-justify">
             <strong>Développeur, Leader, Freelance</strong>
             <br />
-            Depuis plus de 20 ans dans le développement web, j'ai eu la chance
+            Depuis plus de 15 ans dans le développement web, j'ai eu la chance
             et la malchance 😜 de travailler / jouer avec plein d'outils et de
             technologie. Les technologies ont tellement évoluées que l'on doit
             rester à l'affut de tout ce qui ce fait dans ce secteur d'activité.
@@ -43,7 +43,8 @@ const Index = () => {
           <p className="mb-3">
             Pour me contacter
             <br />
-            <a href="mailto:jfparis84@gmail.com">jfparis84@gmail.com</a>
+            <i className="fa fa-envelope fa-fw"></i> <a href="mailto:jfparis84@gmail.com">jfparis84@gmail.com</a><br />
+            <i className="fa-brands fa-linkedin-in fa-fw"></i> <a href="https://www.linkedin.com/in/jean-francois-paris">linkedin.com/in/jean-francois-paris</a>
           </p>
         </div>
         <div className="mb-5 md:w-1/2 md:pl-5">
