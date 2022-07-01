@@ -1,4 +1,6 @@
 import { CalendarIcon } from "@heroicons/react/outline";
+import Head from "next/head";
+import Link from "next/link";
 import Layout from "../../components/Layout/Default";
 
 const BlogPost = (props) => {
@@ -10,8 +12,14 @@ const BlogPost = (props) => {
 
   return (
     <Layout>
+      <Head>
+        <title>{attributes.title} | JF Paris</title>
+      </Head>
       <div className="max-w-7xl my-10 pb-3 border-b-2 border-gray-200">
         <h1 className="text-3xl font-bold text-gray-900">Blogue</h1>
+        <Link href="/blogue">
+          <a><i className="fa fa-fw fa-arrow-left"></i>Retour</a>
+        </Link>
       </div>
 
       <div className="post-container max-w-4xl mx-auto">

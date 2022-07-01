@@ -1,9 +1,13 @@
 import { ExternalLinkIcon, LinkIcon } from "@heroicons/react/outline";
+import Head from "next/head";
 import Layout from "../components/Layout/Default";
 
 const Index = () => {
   return (
     <Layout>
+      <Head>
+        <title>À propos | JF Paris</title>
+      </Head>
       <div className="max-w-7xl my-10 pb-3 border-b-2 border-gray-200">
         <h1 className="text-3xl font-bold text-gray-900">À propos de moi</h1>
       </div>

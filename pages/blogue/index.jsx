@@ -1,5 +1,6 @@
 import { CalendarIcon } from "@heroicons/react/outline";
 import classNames from "classnames";
+import Head from "next/head";
 import Link from "next/link";
 import Layout from "../../components/Layout/Default";
 
@@ -21,6 +22,9 @@ const importBlogPosts = async () => {
 const Index = ({ postsList }) => {
   return (
     <Layout>
+      <Head>
+        <title>Blogue | JF Paris</title>
+      </Head>
       <div className="max-w-7xl my-10 pb-3 border-b-2 border-gray-200">
         <h1 className="text-3xl font-bold text-gray-900">Blogue</h1>
       </div>
