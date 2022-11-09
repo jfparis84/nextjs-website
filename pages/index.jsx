@@ -1,6 +1,10 @@
 import classNames from "classnames";
+import Image from "next/image";
 import Layout from "../components/Layout/Default";
 import TypingEffect from "../components/TypingEffect";
+
+import developpementPic from '../public/assets/img/james-harrison-vpOeXr5wmR4-unsplash.jpg';
+import mentoratPic from '../public/assets/img/john-schnobrich-FlPc9_VocJ4-unsplash.jpg';
 
 const words = ["Développeur Full-Stack", "Leader", "Coaching", "Mentorat"];
 
@@ -9,7 +13,7 @@ const bulletPoints = [
     title: "Développement",
     content:
       "Dans le développement web depuis plusieurs années, je me rappel des premiers sites que j'ai conçu lorsque j'étais encore au secondaire, avant les années 2000 🤪 ",
-    image: "/assets/img/james-harrison-vpOeXr5wmR4-unsplash.jpg",
+    image: developpementPic,
     caption:  {
       name: "James Harrison",
       href: "https://unsplash.com/@jstrippa",
@@ -19,7 +23,7 @@ const bulletPoints = [
     title: "Mentorat, Coaching",
     content:
       "Depuis quelques années, je me suis découvert une passion pour le coaching et le mentorat auprès des jeunes. Cette passion m'aide dans ma vie professionnel à avoir un impact positive au sein de mon awesome team.",
-    image: "/assets/img/john-schnobrich-FlPc9_VocJ4-unsplash.jpg",
+    image: mentoratPic,
     caption: {
       name: "John Schnobrich",
       href: "https://unsplash.com/@johnschno",
@@ -60,11 +64,11 @@ export default function Index() {
               <p className="text-gray-500">{item.content}</p>
             </div>
             <div className="lg:w-1/3 mx-10 mb-5">
-              <img
+              <Image
                 src={item.image}
                 className="rounded shadow-md shadow-gray-500"
                 alt=""
-              ></img>
+              ></Image>
               <div className="text-center mb-5 mt-3 text-gray-500 text-xs">
                 Photo de <a href={item.caption.href}>{item.caption.name}</a> sur <a href="https://unsplash.com">Unsplash</a>.
               </div>

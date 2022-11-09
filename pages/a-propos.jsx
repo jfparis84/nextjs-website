@@ -1,6 +1,8 @@
 import { ExternalLinkIcon, LinkIcon } from "@heroicons/react/outline";
 import Head from "next/head";
+import Image from "next/image";
 import Layout from "../components/Layout/Default";
+import profilePic from '../public/assets/img/avatar.jpeg';
 
 const Index = () => {
   return (
@@ -52,7 +54,7 @@ const Index = () => {
           </p>
         </div>
         <div className="mb-5 md:w-1/2 md:pl-5">
-          <img src="/assets/img/avatar.jpeg" className="rounded-full" alt="Jean-François Paris"></img>
+          <Image src={profilePic} className="rounded-full" alt="Jean-François Paris" />
         </div>
       </div>
     </Layout>

@@ -9,6 +9,10 @@ const nextConfig = {
     });
     return cfg;
   },
+
+  images: {
+    unoptimized: true
+  },
 };
 
 module.exports = nextConfig;

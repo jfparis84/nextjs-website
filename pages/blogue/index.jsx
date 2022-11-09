@@ -1,6 +1,7 @@
 import { CalendarIcon } from "@heroicons/react/outline";
 import classNames from "classnames";
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 import Layout from "../../components/Layout/Default";
 
@@ -59,7 +60,7 @@ const Index = ({ postsList }) => {
                   day: "numeric",
                 })}
               </div>
-              <img src={item.attributes.image} className="mt-3" alt="" />
+              <Image src={item.attributes.image} className="mt-3" alt="" width={400} height={300} />
               <p className="mt-3">
                 {item.attributes.description}
               </p>
