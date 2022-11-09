@@ -26,18 +26,14 @@ export default function NavBar() {
                 <div className="hidden md:block">
                   <div className="ml-10 flex items-baseline space-x-4">
                     {navigation.map((item) => (
-                      <Link href={item.href} key={item.name}>
-                        <a
-                          className={classNames(
-                            router.asPath === item.href
-                              ? "text-red-400 hover:no-underline"
-                              : "text-white  hover:text-red-400 hover:no-underline",
-                            "px-2 py-2 rounded-md text-sm font-medium transition"
-                          )}
-                          aria-current={item.current ? "page" : undefined}
-                        >
+                      <Link href={item.href} key={item.name} className={classNames(
+                        router.asPath === item.href
+                          ? "text-red-400 hover:no-underline"
+                          : "text-white  hover:text-red-400 hover:no-underline",
+                        "px-2 py-2 rounded-md text-sm font-medium transition"
+                      )}
+                      aria-current={item.current ? "page" : undefined}>
                           {item.name}
-                        </a>
                       </Link>
                     ))}
                   </div>

@@ -18,7 +18,7 @@ const BlogPost = (props) => {
       <div className="max-w-7xl my-10 pb-3 border-b-2 border-gray-200">
         <h1 className="text-3xl font-bold text-gray-900">Blogue</h1>
         <Link href="/blogue">
-          <a><i className="fa fa-fw fa-arrow-left"></i>Retour</a>
+          <i className="fa fa-fw fa-arrow-left"></i>Retour
         </Link>
       </div>
 

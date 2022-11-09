@@ -35,12 +35,10 @@ const Index = ({ postsList }) => {
             key={key}
           >
             <div className="border border-gray-200 p-2 mr-2">
-              <Link href={"/blogue/" + item.slug}>
-                <a className="group block hover:text-red-400 transition">
-                  <h1 className="text-3xl font-bold text-gray-500 mb-3 hover:text-red-400 ">
-                    {item.attributes.title}
-                  </h1>
-                </a>
+              <Link href={"/blogue/" + item.slug} className="group block hover:text-red-400 transition">
+                <h1 className="text-3xl font-bold text-gray-500 mb-3 hover:text-red-400 ">
+                  {item.attributes.title}
+                </h1>
               </Link>
               <div className="mb-3">
                 {item.attributes.categories.map((item, key) => (
