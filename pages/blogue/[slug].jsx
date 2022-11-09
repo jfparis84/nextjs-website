@@ -3,6 +3,45 @@ import Head from "next/head";
 import Link from "next/link";
 import Layout from "../../components/Layout/Default";
 
+const importBlogPosts = async () => {
+  // https://medium.com/@shawnstern/importing-multiple-markdown-files-into-a-react-component-with-webpack-7548559fce6f
+  // second flag in require.context function is if subdirectories should be searched
+  const markdownFiles = require
+    .context("../../posts", false, /\.md$/)
+    .keys()
+    .map((relativePath) => relativePath.substring(2));
+  return Promise.all(
+    markdownFiles.map(async (path) => {
+      const markdown = await import(`../../posts/${path}`);
+      return { ...markdown, slug: path.substring(0, path.length - 3) };
+    })
+  );
+};
+
+export const getStaticPaths = async () => {
+  const postsList = await importBlogPosts();
+
+  //console.log(postsList);
+  const paths = postsList.map((post) => ({
+    params: { slug: post.slug },
+  }));
+  //console.log(paths);
+
+  return {
+    paths,
+    fallback: false
+  };
+};
+
+export const getStaticProps = async (props) => {
+  const slug = props.params.slug;
+  const blogpost = await import(`../../posts/${slug}.md`).catch(
+    (error) => null
+  );
+
+  return { props: { blogpost: {...blogpost} } };
+};
+
 const BlogPost = (props) => {
   if (!props.blogpost) {
     return <div>not found</div>;
@@ -54,15 +93,6 @@ const BlogPost = (props) => {
       </div>
     </Layout>
   );
-};
-
-BlogPost.getInitialProps = async ({ query }) => {
-  const { slug } = query;
-  const blogpost = await import(`../../posts/${slug}.md`).catch(
-    (error) => null
-  );
-
-  return { blogpost };
 };
 
 export default BlogPost;

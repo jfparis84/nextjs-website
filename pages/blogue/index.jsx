@@ -20,6 +20,32 @@ const importBlogPosts = async () => {
   );
 };
 
+export const getStaticProps = async () => {
+  const postsList = await importBlogPosts();
+
+  // sort post listing.
+  postsList.sort((a, b) => {
+    if (a.attributes.date < b.attributes.date) {
+      return 1;
+    } else if (a.attributes.date > b.attributes.date) {
+      return -1;
+    }
+    return 0;
+  });
+
+  // get unique categrories.
+  let categroriesList = [];
+  postsList.forEach((item) => {
+    categroriesList = categroriesList.concat(item.attributes.categories);
+  });
+  categroriesList = [...new Set(categroriesList)];
+  categroriesList.sort((a, b) => {
+    return a.localeCompare(b);
+  });
+
+  return { props: { postsList, categroriesList } };
+};
+
 const Index = ({ postsList }) => {
   return (
     <Layout>
@@ -70,32 +96,6 @@ const Index = ({ postsList }) => {
       </div>
     </Layout>
   );
-};
-
-Index.getInitialProps = async () => {
-  const postsList = await importBlogPosts();
-
-  // sort post listing.
-  postsList.sort((a, b) => {
-    if (a.attributes.date < b.attributes.date) {
-      return 1;
-    } else if (a.attributes.date > b.attributes.date) {
-      return -1;
-    }
-    return 0;
-  });
-
-  // get unique categrories.
-  let categroriesList = [];
-  postsList.forEach((item) => {
-    categroriesList = categroriesList.concat(item.attributes.categories);
-  });
-  categroriesList = [...new Set(categroriesList)];
-  categroriesList.sort((a, b) => {
-    return a.localeCompare(b);
-  });
-
-  return { postsList, categroriesList };
 };
 
 export default Index;
