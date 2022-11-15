@@ -19,7 +19,7 @@ const Index = () => {
           <p className="mb-3 text-justify">
             <strong>Développeur, Leader, Freelance</strong>
             <br />
-            Depuis plus de 15 ans dans le développement web, j&apos;ai eu la chance
+            Depuis plus de 20 ans dans le développement web, j&apos;ai eu la chance
             et la malchance 😜 de travailler / jouer avec plein d&apos;outils et de
             technologie. Les technologies ont tellement évoluées que l&apos;on doit
             rester à l&apos;affut de tout ce qui ce fait dans ce secteur d&apos;activité.
