@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <meta
           name="description"
-          content="Avec plus de 15 ans d'expériences, je me passionne toujours pour les technologies de développement web."
+          content="Avec plus de 20 ans d'expériences, je me passionne toujours pour les technologies de développement web."
         />
         <link rel="icon" href="/favicon.ico" />
         <link
