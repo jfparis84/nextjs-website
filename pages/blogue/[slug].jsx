@@ -39,7 +39,7 @@ export const getStaticProps = async (props) => {
     (error) => null
   );
 
-  return { props: { blogpost: {...blogpost} } };
+  return { props: { blogpost: {slug: slug, ...blogpost} } };
 };
 
 const BlogPost = (props) => {
@@ -47,12 +47,27 @@ const BlogPost = (props) => {
     return <div>not found</div>;
   }
 
+  const { slug } = props.blogpost;
   const { attributes, html } = props.blogpost.default;
 
   return (
     <Layout>
       <Head>
         <title>{attributes.title} | JF Paris</title>
+        <meta property="og:title" content={attributes.title + " | JF Paris"}></meta>
+        <meta name="twitter:title" content={attributes.title + " | JF Paris"}></meta>
+
+        <meta property="og:image" content={"https://blog.jfparis.ca" + attributes.image}></meta>
+        <meta property="og:image:width" content="1500"></meta>
+        <meta property="og:image:height" content="1000"></meta>
+
+        <meta name="description" content={attributes.description}></meta>
+        <meta property="og:description" content={attributes.description}></meta>
+        <meta name="twitter:description" content={attributes.description}></meta>
+        <meta name="keywords" content={attributes.keywords}></meta>
+
+        <meta property="og:url" content={"https://blog.jfparis.ca/" + slug + "/"}></meta>
+        <link rel="canonical" href={"https://blog.jfparis.ca/" + slug + "/"}></link>
       </Head>
       <div className="max-w-7xl my-10 pb-3 border-b-2 border-gray-200">
         <h1 className="text-3xl font-bold text-gray-900">Blogue</h1>

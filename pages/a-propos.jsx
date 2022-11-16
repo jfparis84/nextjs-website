@@ -9,6 +9,21 @@ const Index = () => {
     <Layout>
       <Head>
         <title>À propos | JF Paris</title>
+        <meta property="og:title" content="À propos | JF Paris"></meta>
+        <meta name="twitter:title" content="À propos | JF Paris"></meta>
+
+        <meta property="og:image" content="https://blog.jfparis.ca/assets/img/avatar.jpeg"></meta>
+        <meta property="og:image:width" content="500"></meta>
+        <meta property="og:image:height" content="500"></meta>
+
+        <meta property="og:url" content=" https://blog.jfparis.ca/a-propos/"></meta>
+
+        <meta name="description" content="Développeur, Leader, Freelance, Mentor, Papa, tout ça en même temps."></meta>
+        <meta property="og:description" content="Développeur, Leader, Freelance, Mentor, Papa, tout ça en même temps."></meta>
+        <meta name="twitter:description" content="Développeur, Leader, Freelance, Mentor, Papa, tout ça en même temps."></meta>
+        <meta name="keywords" content="Développeur, Leader, Freelance, Mentor, Papa"></meta>
+
+        <link rel="canonical" href="https://blog.jfparis.ca/a-propos/"></link>
       </Head>
       <div className="max-w-7xl my-10 pb-3 border-b-2 border-gray-200">
         <h1 className="text-3xl font-bold text-gray-900">À propos de moi</h1>

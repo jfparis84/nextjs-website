@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import Head from "next/head";
 import Image from "next/image";
 import Layout from "../components/Layout/Default";
 import TypingEffect from "../components/TypingEffect";
@@ -34,6 +35,23 @@ const bulletPoints = [
 export default function Index() {
   return (
     <Layout>
+      <Head>
+      <title>JF Paris</title>
+        <meta property="og:title" content="JF Paris"></meta>
+        <meta name="twitter:title" content="JF Paris"></meta>
+
+        <meta property="og:image" content="https://blog.jfparis.ca/assets/img/james-harrison-vpOeXr5wmR4-unsplash.jpg"></meta>
+        <meta property="og:image:width" content="1500"></meta>
+        <meta property="og:image:height" content="500"></meta>
+
+        <meta name="description" content="Avec plus de 20 ans d'expériences, je me passionne toujours pour les technologies de développement web."></meta>
+        <meta property="og:description" content="Avec plus de 20 ans d'expériences, je me passionne toujours pour les technologies de développement web."></meta>
+        <meta name="twitter:description" content="Avec plus de 20 ans d'expériences, je me passionne toujours pour les technologies de développement web."></meta>
+        <meta name="keywords" content="Développeur, Développement web, Blogue, PHP, Mentorat, Développeur Full-Stack, Leader, Leadership, Carrière"></meta>
+
+        <meta property="og:url" content="https://blog.jfparis.ca/blogue/"></meta>
+        <link rel="canonical" href="https://blog.jfparis.ca/blogue/"></link>
+      </Head>
       <div className="text-center py-20 mb-20 border-b border-gray-200">
         <div>
           <h1 className="text-4xl tracking-tight font-extrabold text-gray-800 sm:text-5xl md:text-6xl">

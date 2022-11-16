@@ -4,6 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Layout from "../../components/Layout/Default";
+import BlogPost from "./[slug]";
 
 const importBlogPosts = async () => {
   // https://medium.com/@shawnstern/importing-multiple-markdown-files-into-a-react-component-with-webpack-7548559fce6f
@@ -51,6 +52,20 @@ const Index = ({ postsList }) => {
     <Layout>
       <Head>
         <title>Blogue | JF Paris</title>
+        <meta property="og:title" content="Blogue | JF Paris"></meta>
+        <meta name="twitter:title" content="Blogue | JF Paris"></meta>
+
+        <meta property="og:image" content={"https://blog.jfparis.ca" + postsList[0].attributes.image}></meta>
+        <meta property="og:image:width" content="1500"></meta>
+        <meta property="og:image:height" content="500"></meta>
+
+        <meta name="description" content={postsList[0].attributes.description}></meta>
+        <meta property="og:description" content={postsList[0].attributes.description}></meta>
+        <meta name="twitter:description" content={postsList[0].attributes.description}></meta>
+        <meta name="keywords" content={postsList[0].attributes.keywords}></meta>
+
+        <meta property="og:url" content="https://blog.jfparis.ca/blogue/"></meta>
+        <link rel="canonical" href="https://blog.jfparis.ca/blogue/"></link>
       </Head>
       <div className="max-w-7xl my-10 pb-3 border-b-2 border-gray-200">
         <h1 className="text-3xl font-bold text-gray-900">Blogue</h1>
