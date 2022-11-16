@@ -22,7 +22,7 @@ const bulletPoints = [
   {
     title: "Mentorat, Coaching",
     content:
-      "Depuis quelques années, je me suis découvert une passion pour le coaching et le mentorat auprès des jeunes. Cette passion m'aide dans ma vie professionnel à avoir un impact positive au sein de mon awesome team.",
+      "Depuis quelques années, je me suis découvert une passion pour le coaching et le mentorat auprès des jeunes. Cette passion m'aide dans ma vie professionnelle à avoir un impact positif au sein de mon awesome team.",
     image: mentoratPic,
     caption: {
       name: "John Schnobrich",

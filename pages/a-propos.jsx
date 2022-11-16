@@ -21,9 +21,9 @@ const Index = () => {
             <br />
             Depuis plus de 20 ans dans le développement web, j&apos;ai eu la chance
             et la malchance 😜 de travailler / jouer avec plein d&apos;outils et de
-            technologie. Les technologies ont tellement évoluées que l&apos;on doit
-            rester à l&apos;affut de tout ce qui ce fait dans ce secteur d&apos;activité.
-            J&apos;ai participé à plusieurs projets d&apos;evergures au sein d&apos;entreprise
+            technologie. Les technologies ont tellement évolué que l&apos;on doit
+            rester à l&apos;affût de tout ce qui se fait dans ce secteur d&apos;activité.
+            J&apos;ai participé à plusieurs projets d&apos;envergures au sein d&apos;entreprise
             ainsi qu&apos;en freelance.
           </p>
 
@@ -42,9 +42,9 @@ const Index = () => {
           <p className="mb-3 text-justify">
             <strong>Papa</strong>
             <br />
-            Père de 3 beaux enfants, amoureux hors pairs. À chaque jour qui
+            Père de 3 beaux enfants, amoureux hors pairs. Chaque jour qui
             passe, je me bât pour être une meilleure personne. Pour moi, c&apos;est
-            primordiale de priorisé ma famille avant tout.
+            primordial de prioriser ma famille avant tout.
           </p>
           <p className="mb-3">
             Pour me contacter
