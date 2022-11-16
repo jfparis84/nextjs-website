@@ -58,7 +58,7 @@ const Index = () => {
           <h2 className="text-gray-800 font-bold text-xl my-5">Papa</h2>
           <p className="mb-3">
             Ma conjointe ❤️ Véronique ❤️ avec qui je partage ma vie depuis plus
-            de 10 ans m'a offert le privilège de devenir père, pas 1, pas 2 mais
+            de 10 ans m&apos;a offert le privilège de devenir père, pas 1, pas 2 mais
             bien 3 fois. Chaque jour qui passe, je me bât pour être un meilleur
             amoureux, un meilleur père, une meilleure personne. Pour moi,
             c&apos;est primordial de prioriser ma famille avant tout.
