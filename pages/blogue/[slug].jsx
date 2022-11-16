@@ -77,7 +77,6 @@ const BlogPost = (props) => {
             ))}
           </div>
           <div className="text-sm">
-            {console.log(attributes.date)}
           <CalendarIcon className="inline-flex h-3.5 w-3.5 -top-0.5 relative" />{" "}
             {new Date(attributes.date).toLocaleDateString("fr-ca", {
               weekday: "long",
