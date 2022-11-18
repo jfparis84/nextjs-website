@@ -2,6 +2,8 @@ import { CalendarIcon } from "@heroicons/react/outline";
 import Head from "next/head";
 import Link from "next/link";
 import Layout from "../../components/Layout/Default";
+import hljs from "highlight.js";
+import { useEffect } from "react";
 
 const importBlogPosts = async () => {
   // https://medium.com/@shawnstern/importing-multiple-markdown-files-into-a-react-component-with-webpack-7548559fce6f
@@ -49,6 +51,10 @@ const BlogPost = (props) => {
 
   const { slug } = props.blogpost;
   const { attributes, html } = props.blogpost.default;
+
+  useEffect(() => {
+    hljs.highlightAll();
+  });
 
   return (
     <Layout>
