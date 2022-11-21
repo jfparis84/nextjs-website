@@ -84,6 +84,8 @@ npm run dev
 
 ## 6. Exemple d'utilisation
 
+Vous pouvez maintenant utilisez les classes utilitaires de Tailwind CSS afin de donner du style et de la geule à votre application web. 😎
+
 ### Dans une page/component
 ```js
 export default function Test() {
@@ -107,6 +109,7 @@ body {
 
 ### Dans un fichier css de module ./styles/Test.module.scss
 ```scss
+/* ./styles/Test.module.scss */
 .container {
   h1 {
     @apply text-gray-500 font-bold text-2xl my-5;
@@ -115,6 +118,7 @@ body {
 ```
 
 ```js
+/* ./pages/test.jsx */
 import styles from "../styles/Test.module.scss";
 
 export default function Test() {

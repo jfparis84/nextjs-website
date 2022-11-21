@@ -10,10 +10,6 @@ a {
   @apply transition text-red-400 hover:underline;
 }
 
-code {
-  @apply mb-3;
-}
-
 .post-container {
   .post-content {
     @apply mb-10;
@@ -40,6 +36,14 @@ code {
 
     ul {
       @apply mb-5;
+    }
+
+    code {
+      @apply mb-3;
+    }
+
+    hr {
+      @apply my-10;
     }
 
     .caption {
