@@ -10,6 +10,10 @@ a {
   @apply transition text-red-400 hover:underline;
 }
 
+code {
+  @apply mb-3;
+}
+
 .post-container {
   .post-content {
     @apply mb-10;
