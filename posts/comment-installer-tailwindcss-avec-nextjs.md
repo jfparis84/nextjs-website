@@ -1,26 +1,27 @@
 ---
 title: Comment installer Tailwind CSS avec Next.js
-description: Nous allons voir ensemble comment installer et configurer Tailwind CSS pour vos projets Next.js.
+description: Tailwind CSS, un framework facile a installer et configurer dans un projet Next.js. Un jeu d'enfant 😃
 keywords: Tailwind CSS, Next.js, Installation Tailwind CSS
 date: 2022-11-17T20:00:00.000Z
-image: /assets/img/victor-rodriguez-pWOdBS_l9LQ-unsplash.jpg
+image: /assets/img/maik-jonietz-_yMciiStJyY-unsplash.jpg
 categories:
   - CSS
   - Tailwind CSS
   - Next.js
+  - SCSS
 ---
 
-![Un saut dans le vide!](/assets/img/victor-rodriguez-pWOdBS_l9LQ-unsplash.jpg "Un saut dans le vide")
+![Un saut dans le vide!](/assets/img/maik-jonietz-_yMciiStJyY-unsplash.jpg "Un saut dans le vide")
 
 <div class="caption">
-Photo de <a href="https://unsplash.com/@vimarovi">Victor Rodriguez</a> sur <a href="https://unsplash.com">Unsplash</a>.
+Photo de <a href="https://unsplash.com/@der_maik_">Maik Jonietz</a> sur <a href="https://unsplash.com">Unsplash</a>.
 </div>
 
-Nous allons passer en détails les étapes à suivre pour installer et configurer [Tailwind CSS](https://tailwindcss.com/) avec [Next.js](https://nextjs.org/). Vous allez voir, c'est un jeu d'enfant 😃
+Nous allons passer en détail les étapes à suivre pour installer et configurer [Tailwind CSS](https://tailwindcss.com/) avec [Next.js](https://nextjs.org/). Vous allez voir, c'est simple et facile, un vrai jeu d'enfant 🙈🙉🙈🙉
 
-## 1. Création d'un projet Next.js
+## 1. Création d'un projet Next.js, dahhhh
 
-Évidement, si vous voulez installer __Tailwind CSS__ sur votre projet existant, vous pouvez sauter cette étape. 🤪
+Évidemment, si vous voulez installer __Tailwind CSS__ sur votre projet existant, vous pouvez sauter cette étape. 🤪
 
 ```shell
 npx create-next-app@latest
@@ -37,11 +38,11 @@ npm i tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 
-## 3. Configuration des chemins pour nos vues
+## 3. Configuration des paths pour nos vues
 
-Dans le fichier __`./tailwind.config.js`__, il faut ajouter les chemins pour nos vues.
+Dans le fichier __`./tailwind.config.js`__, il faut ajouter les paths pour nos vues.
 Dans un projet Next.js, habituellement, nous avons les __`./pages`__ et les __`./components`__.
-Si vous avez d'autres chemins à configurer pour votre projet, vous pourriez les ajouter à cet endroit.
+Si vous avez d'autres chemins à configurer pour votre projet, vous pourrez les ajouter à cet endroit.
 
 ```js
 module.exports = {
@@ -57,14 +58,15 @@ module.exports = {
 ```
 
 Comme vous le constater, vous pouvez ajouter d'autres sections de votre application.
-Ces chemins dicteront où se trouvent vos pages / components utilisant des classes de Tailwind CSS.
+Ces chemins dictent où se trouvent vos pages / components utilisant des classes de Tailwind CSS.
 
 Une des forces de __Tailwind CSS__ c'est que votre fichier de feuille de style est ultra léger. 
-En effet, __Tailwind CSS__ compilera seulement les classes qui sont utilisé dans votre projet. 😃
+En effet, __Tailwind CSS__ compilera seulement les classes qui sont utilisées dans votre projet. 😃
 
 ## 4. Ajout des directives Tailwind CSS sur votre CSS
 
-Nous allons maintenant ajouter les directives de __Tailwind CSS__ sur notre fichier __`./styles/globals.[scss,css]`__
+Nous allons maintenant ajouter les directives de __Tailwind CSS__ sur notre fichier __`./styles/globals.[scss,css]`__.  
+*Si vous vous dites : heuuuu, scss ??? [voir la doc](https://sass-lang.com/documentation/syntax)*
 
 ```css
 @tailwind base;
@@ -72,9 +74,9 @@ Nous allons maintenant ajouter les directives de __Tailwind CSS__ sur notre fich
 @tailwind utilities;
 ```
 
-On ne lâche pas, on en y est preque 😉
+On ne lâche pas, on en y est presque 😉
 
-## 5. Démarrer l'application
+## 5. Démarrer l'application 🚀
 
 On peut maintenant redémarrer l'application, toutes nos étapes de configuration de __Tailwind CSS__ sont terminées.
 
@@ -84,7 +86,7 @@ npm run dev
 
 ## 6. Exemple d'utilisation
 
-Vous pouvez maintenant utilisez les classes utilitaires de Tailwind CSS afin de donner du style et de la geule à votre application web. 😎
+Vous pouvez maintenant utiliser les classes utilitaires de Tailwind CSS afin de donner du style et de la gueule à votre application web. 😎 
 
 ### Dans une page/component
 ```js
@@ -130,7 +132,9 @@ export default function Test() {
 }
 ```
 
------
+--------
 
 ## Conclusion
 
+Nous avons vu comment il est simple d'installer et configurer __Tailwind CSS__ dans une application __Next.js__. 
+Dans votre prochain projet __react__, j'espère vous avoir donner l'envie d'essayer __Tailwind CSS__ afin de styliser et designer votre app.
