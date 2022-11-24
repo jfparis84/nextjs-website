@@ -45,16 +45,16 @@ export const getStaticProps = async (props) => {
 };
 
 const BlogPost = (props) => {
+  useEffect(() => {
+    hljs.highlightAll();
+  });
+  
   if (!props.blogpost) {
     return <div>not found</div>;
   }
 
   const { slug } = props.blogpost;
   const { attributes, html } = props.blogpost.default;
-
-  useEffect(() => {
-    hljs.highlightAll();
-  });
 
   return (
     <Layout>
