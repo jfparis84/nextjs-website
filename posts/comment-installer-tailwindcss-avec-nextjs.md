@@ -17,7 +17,22 @@ categories:
 Photo de <a href="https://unsplash.com/@der_maik_">Maik Jonietz</a> sur <a href="https://unsplash.com">Unsplash</a>.
 </div>
 
-Nous allons passer en détail les étapes à suivre pour installer et configurer [Tailwind CSS](https://tailwindcss.com/) avec [Next.js](https://nextjs.org/). Vous allez voir, c'est simple et facile, un vrai jeu d'enfant 🙈🙉🙈🙉
+[Tailwind CSS](https://tailwindcss.com/) est un framework CSS utilitaire. Il est populaire auprès des développeurs et designer par son agilité pour la création rapide d'interfaces utilisateur personnalisées.
+Out-of-the-box, il nous fournit des classes de bas niveau. Toutes ces classes se combinent pour créer des composants visuels de feu. Je vous invite à aller en apprendre plus sur ce framework que j'adore. 😍
+
+[Next.js](https://nextjs.org/) est un framework populaire pour React. 
+D'après moi, c'est **LE framework** pour React en ce moment.   
+Ce qui le différencie des autres frameworks, à mon avis, ce qui le rend **awesome** est qu'il permet de faire le rendu de page côté serveur et la génération de sites web statiques, comme ce site d'ailleurs. 😉  
+On va se le dire, ça permet d'accélérer le développement et la performance du site.
+
+C'est une technologie bien établie depuis sa sortie en 2016. Plusieurs développeurs et entreprises ont emboîté le pas telles que Apple, Walmart, Nike, Netflix, TikTok.  
+
+Nous allons passer en détail les étapes à suivre pour installer et configurer [Tailwind CSS](https://tailwindcss.com/) avec [Next.js](https://nextjs.org/). 
+Vous allez voir, c'est simple et facile, un vrai jeu d'enfant 🙈🙉🙈🙉
+
+<div class="bg-amber-100 p-4 rounded-md text-amber-800">
+Ah oui j'oubliais, assurez-vous d'avoir <strong>node</strong> et <strong>npm</strong> d'installer sur votre machine avant d'aller plus loin. 🙄
+</div>
 
 ## 1. Création d'un projet Next.js, dahhhh
 
@@ -132,9 +147,15 @@ export default function Test() {
 }
 ```
 
---------
-
 ## Conclusion
 
-Nous avons vu comment il est simple d'installer et configurer __Tailwind CSS__ dans une application __Next.js__. 
-Dans votre prochain projet __react__, j'espère vous avoir donner l'envie d'essayer __Tailwind CSS__ afin de styliser et designer votre app.
+Nous avons vu comment il est simple d'installer et configurer __Tailwind CSS__ dans une application __Next.js__. Nous sommes maintenant prêts à travailler avec les dernières versions de Next.js et Tailwind CSS.
+
+J'espère vous avoir donné l'envie d'essayer __Tailwind CSS__ afin de styliser et designer votre app.
+Vous allez voir, vous n'allez plus vous en passez. 😍
+
+Merci d'avoir lu. J'espère que ça a été utile. 🤪
+
+## Référence
+
+[https://tailwindcss.com/docs/guides/nextjs](https://tailwindcss.com/docs/guides/nextjs)
