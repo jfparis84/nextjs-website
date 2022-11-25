@@ -72,8 +72,8 @@ const BlogPost = (props) => {
         <meta name="twitter:description" content={attributes.description}></meta>
         <meta name="keywords" content={attributes.keywords}></meta>
 
-        <meta property="og:url" content={"https://blog.jfparis.ca/" + slug + "/"}></meta>
-        <link rel="canonical" href={"https://blog.jfparis.ca/" + slug + "/"}></link>
+        <meta property="og:url" content={"https://blog.jfparis.ca/blogue/" + slug + "/"}></meta>
+        <link rel="canonical" href={"https://blog.jfparis.ca/blogue/" + slug + "/"}></link>
       </Head>
       <div className="max-w-7xl my-10 pb-3 border-b-2 border-gray-200">
         <h1 className="text-3xl font-bold text-gray-900">Blogue</h1>
