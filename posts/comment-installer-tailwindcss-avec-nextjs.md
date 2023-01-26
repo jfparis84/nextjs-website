@@ -1,5 +1,5 @@
 ---
-title: Comment installer Tailwind CSS avec Next.js
+title: Comment installer Tailwind CSS avec Next.js ?
 description: Tailwind CSS, un framework facile a installer et configurer dans un projet Next.js. Un jeu d'enfant 😃
 keywords: Tailwind CSS, Next.js, Installation Tailwind CSS
 date: 2022-11-17T20:00:00.000Z
