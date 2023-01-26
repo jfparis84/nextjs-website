@@ -1,12 +1,13 @@
 ---
 title: Comment bien intégrer des stagiaires dans son équipe ?
-description: Intégration de nouveau stagiaire dans son équipe de développement. Une expérience tellement enrichissante pour les deux parties.
+description: Intégration de nouveau stagiaire dans son équipe de développement. Une expérience tellement enrichissante pour les deux parties. 😍
 keywords: Stagiaire, Équipe, Leadership
-date: 2023-01-21T20:00:00.000Z
+date: 2023-01-25T20:00:00.000Z
 image: /assets/img/john-schnobrich-FlPc9_VocJ4-unsplash.jpg
 categories:
   - Carrière
   - Leadership
+  - Mentorat
 ---
 
 ![Un saut dans le vide!](/assets/img/john-schnobrich-FlPc9_VocJ4-unsplash.jpg "Un saut dans le vide")
