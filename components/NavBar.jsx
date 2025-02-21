@@ -1,13 +1,13 @@
 import { Disclosure } from "@headlessui/react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import classNames from "classnames";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
 const navigation = [
-  { name: "Accueil", href: "/" },
-  { name: "À propos", href: "/a-propos" },
-  { name: "Blogue", href: "/blogue" },
+  { name: "Accueil", href: "/", regexp: new RegExp('^\/$') },
+  { name: "À propos", href: "/a-propos/", regexp: new RegExp('^\/a-propos\/$') },
+  { name: "Blogue", href: "/blogue/", regexp: new RegExp('^\/blogue\/') },
 ];
 
 export default function NavBar() {
@@ -27,7 +27,7 @@ export default function NavBar() {
                   <div className="ml-10 flex items-baseline space-x-4">
                     {navigation.map((item) => (
                       <Link href={item.href} key={item.name} className={classNames(
-                        router.asPath === item.href
+                        item.regexp.test(router.asPath)
                           ? "text-red-400 hover:no-underline"
                           : "text-white  hover:text-red-400 hover:no-underline",
                         "px-2 py-2 rounded-md text-sm font-medium transition"
@@ -44,9 +44,9 @@ export default function NavBar() {
                 <Disclosure.Button className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XIcon className="block h-6 w-6" aria-hidden="true" />
+                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
-                    <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
               </div>
