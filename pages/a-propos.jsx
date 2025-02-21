@@ -1,4 +1,4 @@
-import { ExternalLinkIcon, LinkIcon } from "@heroicons/react/outline";
+import { ArrowTopRightOnSquareIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
 import Head from "next/head";
 import Image from "next/image";
 import Layout from "../components/Layout/Default";
@@ -48,7 +48,7 @@ const Index = () => {
           <p className="mb-3">
             Depuis quelques années, je suis mentor sur la plateforme{" "}
             <a href="https://academos.qc.ca" target="_blank" rel="noreferrer">
-              <ExternalLinkIcon className="inline w-4 h-4 relative -top-0.5" />
+              <ArrowTopRightOnSquareIcon className="inline w-4 h-4 relative -top-0.5" />
               Academos
             </a>
             . Cette plateforme aide les jeunes à entrer en contact avec des
@@ -66,7 +66,7 @@ const Index = () => {
           <p className="mb-3">
             Pour me contacter
             <br />
-            <i className="fa fa-envelope fa-fw"></i>{" "}
+            <EnvelopeIcon className="inline w-4 h-4 relative -top-0.5" />{" "}
             <a href="mailto:jfparis84@gmail.com">jfparis84@gmail.com</a>
             <br />
             <i className="fa-brands fa-linkedin-in fa-fw"></i>{" "}
