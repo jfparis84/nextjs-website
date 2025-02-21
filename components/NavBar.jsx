@@ -5,9 +5,9 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const navigation = [
-  { name: "Accueil", href: "/" },
-  { name: "À propos", href: "/a-propos" },
-  { name: "Blogue", href: "/blogue" },
+  { name: "Accueil", href: "/", regexp: new RegExp('^\/$') },
+  { name: "À propos", href: "/a-propos/", regexp: new RegExp('^\/a-propos\/$') },
+  { name: "Blogue", href: "/blogue/", regexp: new RegExp('^\/blogue\/') },
 ];
 
 export default function NavBar() {
@@ -27,7 +27,7 @@ export default function NavBar() {
                   <div className="ml-10 flex items-baseline space-x-4">
                     {navigation.map((item) => (
                       <Link href={item.href} key={item.name} className={classNames(
-                        router.asPath === item.href
+                        item.regexp.test(router.asPath)
                           ? "text-red-400 hover:no-underline"
                           : "text-white  hover:text-red-400 hover:no-underline",
                         "px-2 py-2 rounded-md text-sm font-medium transition"
