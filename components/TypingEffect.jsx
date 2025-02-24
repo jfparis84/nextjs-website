@@ -1,36 +1,40 @@
-import { from, interval, concat, of } from "rxjs";
-import {
-  map,
-  take,
-  repeat,
-  delay,
-  concatMap,
-  ignoreElements,
-} from "rxjs/operators";
-import { useObservable } from "rxjs-hooks";
+import { useState, useEffect } from "react";
 
-const type = ({ word, speed, backward = false }) =>
-  interval(speed).pipe(
-    map((x) =>
-      backward ? word.substr(0, word.length - x - 1) : word.substr(0, x + 1)
-    ),
-    take(word.length)
-  );
-
-const typeEffect = (word) =>
-  concat(
-    type({ word, speed: 70 }), // type
-    of("").pipe(delay(1500), ignoreElements()), // pause
-    type({ word, speed: 30, backward: true }), // delete
-    of("").pipe(delay(300), ignoreElements()) // pause
-  );
+const typeEffect = async (word, setWord, speed, backward = false) => {
+  for (let i = 0; i <= word.length; i++) {
+    await new Promise((resolve) => setTimeout(resolve, speed));
+    setWord(backward ? word.slice(0, word.length - i) : word.slice(0, i));
+  }
+};
 
 const TypingEffect = ({ words }) => {
-  const value = useObservable(() =>
-    from(words).pipe(concatMap(typeEffect), repeat())
-  );
+  const [displayedText, setDisplayedText] = useState("");
+  const [index, setIndex] = useState(0);
 
-  return <>{value}</>;
+  useEffect(() => {
+    let isCancelled = false;
+
+    const runEffect = async () => {
+      const word = words[index % words.length];
+
+      await typeEffect(word, setDisplayedText, 70); // Typing
+      await new Promise((resolve) => setTimeout(resolve, 1500)); // Pause
+      await typeEffect(word, setDisplayedText, 30, true); // Deleting
+      await new Promise((resolve) => setTimeout(resolve, 300)); // Pause
+
+      if (!isCancelled) {
+        setIndex((prev) => (prev + 1) % words.length);
+      }
+    };
+
+    runEffect();
+
+    return () => {
+      isCancelled = true;
+    };
+  }, [index, words]);
+
+  return <>{displayedText}</>;
 };
 
 export default TypingEffect;
