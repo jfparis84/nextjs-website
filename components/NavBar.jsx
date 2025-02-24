@@ -32,8 +32,8 @@ export default function NavBar() {
                     {navigation.map((item) => (
                       <Link href={item.href} key={item.name} className={classNames(
                         item.regexp.test(router.asPath)
-                          ? "text-red-400 hover:no-underline"
-                          : "text-white  hover:text-red-400 hover:no-underline",
+                          ? "current-nav"
+                          : "",
                         "px-2 py-2 rounded-md text-sm font-medium transition"
                       )}
                       aria-current={item.current ? "page" : undefined}>

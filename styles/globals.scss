@@ -5,12 +5,16 @@ body {
 }
 
 a {
-  @apply transition duration-200 hover:text-red-400 hover:underline;
+  @apply transition duration-300 text-red-400 hover:text-red-400 hover:underline;
 }
 
 .top-nav {
   a {
-    @apply hover:no-underline;
+    @apply text-white hover:text-red-400 hover:no-underline;
+
+    &.current-nav {
+      @apply text-red-400;
+    }
   }
 }
 
