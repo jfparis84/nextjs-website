@@ -16,14 +16,16 @@ export default function NavBar() {
   const router = useRouter();
 
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-gray-800 top-nav">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16">
               <div className="flex items-center">
                 <div className="flex-shrink-0 text-white text-lg font-extrabold">
-                  JF Paris
+                  <Link href="/" className="brand-logo">
+                    JF Paris
+                  </Link>
                 </div>
                 <div className="hidden md:block">
                   <div className="ml-10 flex items-baseline space-x-4">
