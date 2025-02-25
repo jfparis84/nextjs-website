@@ -19,10 +19,10 @@ export default function Layout({ title, children }) {
         <footer className="bg-gray-800">
           <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
             <div className="text-white text-sm">
-              ©2022 par JF Paris.
+              ©{new Date().getFullYear()} par JF Paris.
               <br />
-              Créer avec <a href="https://nextjs.org/">Nextjs</a> |{" "}
-              <a href="https://tailwindcss.com/">TailwindCSS</a>
+              Créer avec <a href="https://nextjs.org/" className="text-red-400">Nextjs</a> |{" "}
+              <a href="https://tailwindcss.com/" className="text-red-400">TailwindCSS</a>
             </div>
           </div>
         </footer>

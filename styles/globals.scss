@@ -5,7 +5,17 @@ body {
 }
 
 a {
-  @apply transition hover:text-red-400 hover:underline;
+  @apply transition duration-300 text-red-400 hover:text-red-400 hover:underline;
+}
+
+.top-nav {
+  a {
+    @apply text-white hover:text-red-400 hover:no-underline;
+
+    &.current-nav {
+      @apply text-red-400;
+    }
+  }
 }
 
 .post-container {
