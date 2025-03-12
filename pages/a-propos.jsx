@@ -48,8 +48,8 @@ const Index = () => {
           <p className="mb-3">
             Depuis quelques années, je suis mentor sur la plateforme{" "}
             <a href="https://academos.qc.ca" target="_blank" rel="noreferrer">
+              Academos{" "}
               <ArrowTopRightOnSquareIcon className="inline w-4 h-4 relative -top-0.5" />
-              Academos
             </a>
             . Cette plateforme aide les jeunes à entrer en contact avec des
             travailleurs de tous les secteurs.

@@ -8,7 +8,9 @@ function MyApp({ Component, pageProps }) {
 
   // Google Tag Manager
   useEffect(() => {
-    TagManager.initialize({ gtmId: process.env.NEXT_PUBLIC_GTM_ID });
+    if (process.env.NEXT_PUBLIC_GTM_ID) {
+      TagManager.initialize({ gtmId: process.env.NEXT_PUBLIC_GTM_ID });
+    }
   }, []);
 
   return <Component {...pageProps} />
